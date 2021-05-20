@@ -1,4 +1,4 @@
-if (localStorage.getItem("notas").length > 0) {
+if (localStorage.getItem("notas") == undefined) {
     $('#tbodyNotas').html(localStorage.getItem("notas"));
 }else{
     localStorage.setItem("notas", '');
