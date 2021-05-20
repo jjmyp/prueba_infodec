@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "73aca82a-4330-4476-97c6-41ffb76dc1c2",
+		"name": "ApiRest- SlimFramework",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api_rest_slim/public/index.php/customer/getAll",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api_rest_slim",
+						"public",
+						"index.php",
+						"customer",
+						"getAll"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api_rest_slim/public/index.php/customer/get/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api_rest_slim",
+						"public",
+						"index.php",
+						"customer",
+						"get",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveorupdateUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"primer_nombre\":\"Jairo\",\n    \"segundo_nombre\":\"Alberto\",\n    \"primer_apellido\":\"Rivera\",\n    \"segundo_apellido\":\"Ordoñez\",\n    \"dni\":\"1143880320\",\n    \"fecha_nacimiento\":\"1999-11-28\",\n    \"direccion\":\"Cra 4 #4567\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/api_rest_slim/public/index.php/customer/saveorupdate",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api_rest_slim",
+						"public",
+						"index.php",
+						"customer",
+						"saveorupdate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteUser",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/api_rest_slim/public/index.php/customer/delete/7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api_rest_slim",
+						"public",
+						"index.php",
+						"customer",
+						"delete",
+						"7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

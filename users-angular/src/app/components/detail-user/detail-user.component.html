@@ -1,0 +1,27 @@
+<div class="justify-content-center d-flex">
+  <div class="card mb-3 w-50">
+    <div class="card-header">
+      <img [src]="user.foto" class="card-img-top" alt="..." />
+    </div>
+    <div class="card-body">
+      <div class="text-center">
+        <h4><strong>{{ user.nombre }}</strong></h4>
+      </div>
+      <p class="card-text">
+        <strong>Documento:</strong>  {{ user.documento }}
+      </p>
+      <p class="card-text">
+        <strong>Telefono:</strong>  {{ user.telefono }}
+      </p>
+      <p class="card-text">
+        <strong>Profesion:</strong>  {{user.profesion}}          
+      </p>
+      <p class="card-text">
+        <strong>Pais:</strong>  {{user.pais}}          
+      </p>
+      <p class="card-text">
+        <strong>Ciudad:</strong>  {{user.ciudad}}          
+      </p>
+    </div>
+  </div>
+</div>
